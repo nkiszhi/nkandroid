@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Letter - Simple Sign Up Form</title>
+<!-- 
+
+Letter Template 
+
+https://templatemo.com/tm-510-letter
+
+
+
+Template Re-distribution is NOT allowed.
+
+-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="static/css/demo.css" />
+  <link rel="stylesheet" href="static/css/templatemo-style.css">
+  
+  <script type="text/javascript" src="static/js/modernizr.custom.86080.js"></script>
+		
+	</head>
+
+	<body>
+
+			<div id="particles-js"></div>
+		
+			<ul class="cb-slideshow">
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	        </ul>
+
+			<div class="container-fluid">
+				<div class="row cb-slideshow-text-container ">
+					<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
+					<header class="mb-5"><h1>NKU Android Malware Detection</h1></header>
+					<P class="mb-5">Sign up a APK file to detect. And get result from our IVAP model. Thanks for using!</P>
+					
+               	    	<div class="row form-section">
+                            
+							<div class="col-md-8 col-sm-8 col-xs-8">
+			                      <form method="POST" enctype="multipart/form-data" style="width:auto;">
+                                        {{ form.hidden_tag() }}
+                                        {{ form.photo }}
+                                         {% for error in form.photo.errors %}
+                                           <span style="color: red;">{{ error }}</span>
+                                         {% endfor %}
+                                         {{ form.submit }}
+                                    </form>
+				  	        </div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+								<form name="loginform" action='http://59.110.71.49:8000/result' method="post"  target="_blank" class="subscribe-form">
+						            <button type="submit" class="tm-btn-subscribe">result</button>			
+		                        </form>
+							</div>
+						    <div class="col-md-1 col-sm-1 col-xs-1"></div>
+						</div>
+
+                        {{file_url}}    
+
+					</div>
+                    
+				</div>	
+				<div class="footer-link">
+					<p>team:2020 NUK Android Malware Detection group
+                    
+                    - Member: Liyufan Zhaoguoqing Liuyiwen</p>
+				</div>
+			</div>	
+	</body>
+
+	<script type="text/javascript" src="static/js/particles.js"></script>
+	<script type="text/javascript" src="static/js/app.js"></script>
+</html>

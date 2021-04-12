@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<title>result</title>
+</head>
+<body>
+    
+    <br></br>
+
+
+          <h1 class="sub-header" style="text-align:center">检测文件：{{apkname}} </h1>
+          <h2 class="sub-header" style="text-align:center"> 上传时间：{{up_time}} </h2>
+          <br></br>
+          
+          <div class="table-responsive">
+              <font size="3">
+            <table class="table table-striped" >
+              <thead>
+                <tr class="info">
+                  <th> </th>
+                  <th>Mamadroid模型</th>
+                  <th>CNN模型</th>
+                  <th>Drebin模型</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>结果更新时间</td>
+                  <td>{{mtime}}</td>
+                  <td>{{mtime2}}</td>
+                  <td>{{mtime3}}</td>
+                  
+                </tr>
+                <tr>
+                  <td>P0</td>
+                  <td>{{p0}}</td>
+                  <td>{{p02}}</td>
+                  <td>{{p03}}</td>
+                  
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>{{p1}}</td>
+                  <td>{{p12}}</td>
+                  <td>{{p13}}</td>
+                  
+                </tr>
+                <tr>
+                  <td>result</td>
+                  <td>{{m}}</td>
+                  <td>{{m2}}</td>
+                  <td>{{m3}}</td>
+                  
+                </tr>
+                </font> 
+                <font size="4" style="font-weight:bold;">
+                <tr>
+                    
+                  <td class="active">accept?</td>
+                  <td class={{color}}>{{r}}</td>
+                  <td class={{color2}}>{{r2}}</td>
+                  <td class={{color3}}>{{r3}}</td>
+                  
+                  
+                </tr>
+                </font> 
+                <font size="3"> 
+
+              </tbody>
+            </table>
+            </font> 
+          </div>
+
+
+
+
+
+<br></br>
+
+
+<h1 style="text-align:center">
+        检测结果：
+        
+        <span class="label label-{{final[0]}}">{{final[1]}}</span>
+        
+        
+        <!-- <span class="label label-danger">恶意软件</span> -->
+      </h1>
+
+
+</body>
+</html>

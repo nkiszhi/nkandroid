@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <script src="{{ url_for('static', filename = 'echarts.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'jquery-3.5.1.js') }}"></script>
+    <style type="text/css">
+    body{background:url(snow.png)center; background-size:cover;}
+    </style>
+</head>
+<body>
+<!--为echarts准备一个容器，画图就画在里面-->
+<div id="box" style="width: 600px;height: 600px; margin:0px auto;" ></div>
+
+
+<script>
+var myChart = echarts.init(document.getElementById("box"));
+		myChart.setOption({
+            //图标题
+			title:{text: 'Worldismine'},
+            //图提示框
+			tootip:{},
+            //图例
+			legend:{
+				data:['数量']
+			},
+            //x轴属性
+			xAxis:{
+				data:{{ my_dict['datetime']|tojson }}
+			},
+            //y轴属性
+			yAxis:{},
+			//图属性
+			series:[
+				{
+					name:'数量',
+					type:'bar',//图类型：柱状图
+					color:['#3398DB'],//设置图像颜色
+					data:{{ my_dict['data'] }}//图表的数值
+				}
+			]
+		});
+
+		
+				
+
+</script>
+
+</body>
+</html>
+

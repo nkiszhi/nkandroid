@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<title>Upload File</title>
+    <script src="{{ url_for('static', filename = 'echarts.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'jquery-3.5.1.js') }}"></script>
+    <style type="text/css">
+    body{background:url(snow.png)center; background-size:cover;}
+    </style>
+<h1>apk上传</h1>
+<form method="POST" enctype="multipart/form-data">
+     {{ form.hidden_tag() }}
+     {{ form.photo }}
+     {% for error in form.photo.errors %}
+         <span style="color: red;">{{ error }}</span>
+     {% endfor %}
+     {{ form.submit }}
+</form>
+<?php echo 'my_dic'; ?>
+{% if file_url %}
+<br><img src="{{ file_url }}">
+{% endif %}
+<!--echarts容器-->
+<div id="box" style="width: 600px;height: 600px; margin:0px auto;" ></div>
+
+<script>
+var myChart = echarts.init(document.getElementById("box"));
+		myChart.setOption({
+            //图标题
+			title:{text: 'Worldismine'},
+            //图提示框
+			tootip:{},
+            //图例
+			legend:{
+				data:['数量']
+			},
+            //x轴属性
+			xAxis:{
+				data:{{ ['p0','p1']|tojson }}
+			},
+            //y轴属性
+			yAxis:{},
+			//图属性
+			series:[
+				{
+					name:'数量',
+					type:'bar',//图类型：柱状图
+					color:['#3398DB'],//设置图像颜色
+					data:{{ p0p1}}//图表的数值
+				}
+			]
+		});				
+
+</script>
+
+
+
+<div id="box2" style="width:500px;height: 500px;  margin:0px auto;" ></div>
+
+<script>
+var myChart2 = echarts.init(document.getElementById("box2"));
+myChart2.setOption({
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: {c} ({d}%)'
+    },
+    legend: {
+        orient: 'vertical',
+        left: 10,
+        data: [ 'predicts',  'predicts']
+    },
+    series: [
+        {
+            name: '检测结果',
+            type: 'pie',
+            radius: ['30%', '50%'],
+            avoidLabelOverlap: false,
+            label: {
+                show: false,
+                position: 'center'
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '30',
+                    fontWeight: 'bold'
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: [
+                {value: 310, name: 'predicts'},
+                {value: 310, name: 'predicts'}
+            ]
+        }
+    ]
+});
+</script>

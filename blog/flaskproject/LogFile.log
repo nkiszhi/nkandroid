@@ -1,0 +1,27 @@
+2021/03/14 20:45:54 GetApkData.py[line:198] INFO: Start to process /home/www/blog/flaskproject/gen10_24a6802e-95c7-4667-b961-664070f25032_app-release.apk...
+2021/03/14 20:45:58 analysis.py[line:1035] INFO: End of creating cross references (XREF)
+2021/03/14 20:45:58 analysis.py[line:1036] INFO: run time: 0min 00s
+2021/03/14 20:45:58 GetApkData.py[line:118] ERROR: [Errno 2] No such file or directory: '/home/www/blog/flaskproject/gen10_24a6802e-95c7-4667-b961-664070f25032_app-release.xml'
+2021/03/14 20:45:58 GetApkData.py[line:119] ERROR: Cannot resolve 's AndroidManifest.xml File!
+2021/03/14 20:46:03 analysis.py[line:1035] INFO: End of creating cross references (XREF)
+2021/03/14 20:46:03 analysis.py[line:1036] INFO: run time: 0min 00s
+2021/03/14 20:46:04 CommonModules.py[line:311] INFO: Json data of /home/www/drebin/drebin/testdata/gen10_24a6802e-95c7-4667-b961-664070f25032_app-release.data written successfully.
+2021/03/14 20:46:04 GetApkData.py[line:239] INFO: /home/www/blog/flaskproject/gen10_24a6802e-95c7-4667-b961-664070f25032_app-release.apk processed successfully in 10.443634986877441s
+2021/03/14 21:19:27 GetApkData.py[line:198] INFO: Start to process /home/www/blog/flaskproject/gen10_06515735-79ae-48e2-a52b-5a8e2a5befee_app-release.apk...
+2021/03/14 21:19:32 analysis.py[line:1035] INFO: End of creating cross references (XREF)
+2021/03/14 21:19:32 analysis.py[line:1036] INFO: run time: 0min 00s
+2021/03/14 21:19:32 GetApkData.py[line:118] ERROR: [Errno 2] No such file or directory: '/home/www/blog/flaskproject/gen10_06515735-79ae-48e2-a52b-5a8e2a5befee_app-release.xml'
+2021/03/14 21:19:32 GetApkData.py[line:119] ERROR: Cannot resolve 's AndroidManifest.xml File!
+2021/03/14 21:19:37 analysis.py[line:1035] INFO: End of creating cross references (XREF)
+2021/03/14 21:19:37 analysis.py[line:1036] INFO: run time: 0min 00s
+2021/03/14 21:19:38 CommonModules.py[line:311] INFO: Json data of /home/www/drebin/drebin/testdata/gen10_06515735-79ae-48e2-a52b-5a8e2a5befee_app-release.data written successfully.
+2021/03/14 21:19:38 GetApkData.py[line:239] INFO: /home/www/blog/flaskproject/gen10_06515735-79ae-48e2-a52b-5a8e2a5befee_app-release.apk processed successfully in 10.375815868377686s
+2021/03/14 21:35:05 GetApkData.py[line:198] INFO: Start to process /home/www/blog/flaskproject/4_1.apk...
+2021/03/14 21:35:10 analysis.py[line:1035] INFO: End of creating cross references (XREF)
+2021/03/14 21:35:10 analysis.py[line:1036] INFO: run time: 0min 00s
+2021/03/14 21:35:10 GetApkData.py[line:118] ERROR: [Errno 2] No such file or directory: '/home/www/blog/flaskproject/4_1.xml'
+2021/03/14 21:35:10 GetApkData.py[line:119] ERROR: Cannot resolve 's AndroidManifest.xml File!
+2021/03/14 21:35:15 analysis.py[line:1035] INFO: End of creating cross references (XREF)
+2021/03/14 21:35:15 analysis.py[line:1036] INFO: run time: 0min 00s
+2021/03/14 21:35:16 CommonModules.py[line:311] INFO: Json data of /home/www/drebin/drebin/testdata/4_1.data written successfully.
+2021/03/14 21:35:16 GetApkData.py[line:239] INFO: /home/www/blog/flaskproject/4_1.apk processed successfully in 10.36856460571289s
